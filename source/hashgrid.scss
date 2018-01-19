@@ -1,0 +1,45 @@
+#hashgrid {
+
+  width: 980px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -490px;
+  overflow: hidden;
+
+  .hashgrid-column-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .hashgrid__column {
+    width: 139px;
+    border: solid darkturquoise;
+    border-width: 0 1px;
+    margin-left: 19px;
+    height: 100%;
+    float: left;
+  }
+
+  .hashgrid__row {
+    /* 20px line height */
+    height: 19px;
+    border-bottom: 1px dotted darkgray;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hashgrid2, .hashgrid2 .hashgrid-column-container {
+    padding: 0 160px;
+    width: 660px;
+  }
+
+  .hashgrid2 .hashgrid__column {
+    border-color: crimson;
+  }
+
+}

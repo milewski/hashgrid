@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es5",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationDir": "declaration",
+    "newLine": "LF"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
