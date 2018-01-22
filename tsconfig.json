@@ -4,8 +4,7 @@
     "target": "es5",
     "sourceMap": true,
     "declaration": true,
-    "declarationDir": "declaration",
-    "newLine": "LF"
+    "declarationDir": "declaration"
   },
   "exclude": [
     "webpack.config.ts",

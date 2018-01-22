@@ -37,7 +37,7 @@ export class Hashgrid {
         keydown: null, keyup: null
     }
 
-    constructor(options: OptionsInterface) {
+    constructor(options: Partial<OptionsInterface> = {}) {
         this.options = { ...this.options, ...options }
         this.storage = new SimpleStorage()
     }
