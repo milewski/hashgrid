@@ -6,7 +6,7 @@ export enum BackgroundState {
     Foreground
 }
 
-export class HashGrid {
+export class Hashgrid {
 
     private storage: SimpleStorage
     private overlay: HTMLDivElement

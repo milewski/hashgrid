@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "esnext",
+    "module": "commonjs",
     "target": "es5",
     "sourceMap": true,
     "declaration": true,
@@ -8,6 +8,9 @@
     "newLine": "LF"
   },
   "exclude": [
-    "node_modules"
+    "webpack.config.ts",
+    "node_modules",
+    "distribution",
+    "declaration"
   ]
 }

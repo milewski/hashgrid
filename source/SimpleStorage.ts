@@ -5,7 +5,11 @@ export class SimpleStorage implements StorageInterface {
     private storage: Storage
 
     constructor() {
-        this.storage = localStorage || sessionStorage
+        try {
+            this.storage = localStorage || sessionStorage
+        } catch {
+            throw new Error('Your environment doesn\'t support LocalStorage or SessionStorage.')
+        }
     }
 
     public read(key: string): StorageData | null {

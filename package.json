@@ -1,19 +1,30 @@
 {
   "name": "hashgrid",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "A little tool that inserts a layout grid in web pages, allows you to hold it in place, and toggle between displaying it in the foreground or background.",
-  "main": "index.js",
+  "main": "./distribution/hashgrid.min.js",
+  "files": [
+    "distribution/**/*.js",
+    "declaration/**/*.d.ts"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm run build",
+    "build": "tsc webpack.config.ts && webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/milewski/hashgrid.git"
   },
-  "author": "",
+  "author": "Rafael Milewski",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/milewski/hashgrid/issues"
   },
-  "homepage": "https://github.com/milewski/hashgrid#readme"
+  "homepage": "https://github.com/milewski/hashgrid#readme",
+  "devDependencies": {
+    "@types/node": "^9.3.0",
+    "ts-loader": "^3.3.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
+  }
 }
