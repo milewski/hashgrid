@@ -117,7 +117,7 @@ export class Hashgrid {
         this.state.overlayOn = false
     }
 
-    private destroy() {
+    public destroy() {
         this.overlay.remove()
         this.storage.remove(this.options.storagePrefix + this.options.id)
         document.removeEventListener('keydown', this.listeners.keydown)
